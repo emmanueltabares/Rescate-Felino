@@ -1,0 +1,68 @@
+@import "variables";
+
+/* NavBar */
+
+.navbar-brand-style {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+
+.navbar-color {
+    background-color:#42C2A0;
+    a {
+        color: white;
+    }
+}
+/* Carousel */
+
+.img-slide {
+    width: 100%;
+    height: ($alto + 220px);
+}
+
+/* Div pasos */
+
+@each $paso, $num in $pasos {
+    .seccionPasos--color#{$paso} {
+        background-color: $num;
+    }
+}
+
+.seccionPasos {
+    margin-top: 100px;
+    margin-bottom: 50px ;
+}
+
+.seccion {
+    padding: auto;
+    text-align: center;
+    transition: all 1s;
+
+    &:hover {
+        opacity: 80%;
+    }
+    .seccion__titulo {
+        color: $white;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: $coral;
+
+    .container nav div ul li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+}
+
+.copy {
+    text-align: center;
+    color: $white;
+}

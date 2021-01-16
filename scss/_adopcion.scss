@@ -1,0 +1,15 @@
+@import "variables";
+
+.seccion {
+    .seccion__article {
+        .seccion__article__titulo {
+            margin-top: ($alto/2);
+            text-align: center;
+        }
+    }
+
+    .seccion__table {
+        margin-left: 38%;
+        margin-bottom: 40px;
+    }
+}
