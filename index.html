@@ -23,34 +23,36 @@
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-color sticky-top">
-        <a class="navbar-brand navbar-brand-style">
-            <img src="iconos/gato.svg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
-            Rescate Felino
-          </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="pages/colaborar.html">Colaborar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/adopcion.html">Adopción</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div style="width: 100%; height: 620px;" id="myCarousel" class="carousel slide" data-ride="carousel">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <img src="iconos/gato.svg" class="d-inline-block align-top navbar__icono" alt="" loading="lazy"> 
+  <a class="navbar-brand navbar-brand-style">Rescate felino</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/colaborar.html">Colaborar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/adopcion.html">Adoptar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -63,7 +65,6 @@
               <div class="carousel-caption text-left">
                 <h1>Encuentra tu futura mascota</h1>
                 <p>Somos el refugio más grande de Argentina. Nuestro deber es encontrar un hogar para cada gatito.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Inicia sesión</a></p>
               </div>
             </div>
           </div>
@@ -71,9 +72,9 @@
             <img class="second-slide img-slide" src="images/gatoSlide5.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Cambio para git2</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Lee más</a></p>
+                <h1>Vos también podes ayudar.</h1>
+                <p>Sé parte de su vida. Ayudá donando o dales un lugar de tránsito.</p>
+                <p><a class="btn btn-lg btn-primary" href="pages/colaborar.html" role="button">Leer más</a></p>
               </div>
             </div>
           </div>
@@ -82,8 +83,8 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>Dame una caricia y te seguiré hasta el fin del mundo</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <p>Cras justo odio.</p>
+                <p><a class="btn btn-lg btn-primary" href="pages/adopcion.html" role="button">¡Adoptá!</a></p>
               </div>
             </div>
           </div>
@@ -97,71 +98,6 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-      <div class="card-deck">
-        <div class="card">
-          <img src="images/gatoSlide7.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/gatoSlide5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/gatoSlide10.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      
-
-    <!-- <div class="container-fluid seccionPasos">
-        <div class="row">
-            <div class="col seccionPasos__pasos">
-                <section class="seccion seccionPasos--colorpaso1"> 
-                    <h1 class="seccion__titulo"> 1° paso</h1>
-                    <p> Regístrate </p>
-                </section>
-            </div>
-            <div class="col seccionPasos__pasos">
-                <section class="seccion seccionPasos--colorpaso2"> 
-                    <h1 class="seccion__titulo"> 2° paso</h1>
-                    <p> Te contactamos </p>
-                </section>
-            </div>
-            <div class="col seccionPasos__pasos">
-                <section class="seccion seccionPasos--colorpaso3"> 
-                    <h1 class="seccion__titulo"> 3° paso</h1>
-                    <p> una entrevista personal </p>
-                </section>
-            </div>
-            <div class="col seccionPasos__pasos">
-                <section class="seccion seccionPasos--colorpaso4"> 
-                    <h1 class="seccion__titulo"> 4° paso</h1>
-                    <p> Te damos el gatito </p>
-                </section>
-            </div>
-        </div>
-    </div> -->
-
-
 
     <footer class="footer">
         <div class="container">

@@ -1,17 +1,133 @@
 @import "variables";
 
-.seccion {
+.nosotros {
+    background-image: url(../Backgrounds/Diseño.png);
+    background-color: rgb(111, 148, 170);
+    background-repeat: no-repeat;
+    background-size: 100% 1565px;
+    .colaborar {
+        h2 {
+            margin-top: 40px;
+            color: white;
+            text-decoration: overline;
+            font-size: 40px;
+        }
+        p {
+            color: white;
+        }
+    }
+    .nav {
+        background-color: rgb(221, 239, 247);
+        height: 100px;
+        align-items: center;
+        li {
+            a {
+                margin-left: 10px;
+            }
+        }
+    }
+    }
+
+.marketing {
     margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 30px;
-    text-align: center;
+    
+    .featurette {
+        h2 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 22px;
+        }
+        .featurette-heading {
+            margin-top: 25px;
+            
+        }
+    }  
 }
 
-.seccionPasos h1 {
-    font-size: 40px;
-    font-family: $fuente;
+.color {
+    color: black;
 }
 
-.seccionPasos p {
-    font-size: 20px;
+@media (max-width: 425px) {
+    
+    .nosotros {
+        background-size: 400% 2430px;
+        text-align: center;
+
+        .marketing {
+            .featurette {
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }  
+        }
+
+        .colaborar {
+            h2 {
+                margin-top: 25px;
+                font-size: 35px;
+            }
+            .lead {
+                font-size: 20px;
+            }
+        }
+    
+        .nav {
+            height: 150px;
+            h2 {
+                margin-top: 5px;
+                font-size: 30px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+   
+    .nosotros {
+        background-size: 200% 1800px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    .nosotros {
+        background-size: 110% 1360px;
+
+        .marketing {
+            margin-top: 100px;
+            
+            .featurette {
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }  
+        }
+
+        .colaborar {
+            .featurette-heading {
+                margin-top: 50px;
+                font-size: 35px;
+            }
+            .lead {
+                font-size: 20px;
+            }
+        }
+    
+        .nav {
+            height: 120px;
+            h2 {
+                margin-top: 5px;
+                font-size: 22px;
+            }
+        }
+    }
+
 }

@@ -9,6 +9,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
@@ -18,49 +19,71 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">Rescate Felino</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="colaborar.html">Centros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="adopcion.html">Adopción</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-            
-            
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-        </div>
-    </nav>
-    
-        <div>
-            <section class="buscar">
-                <h2 id="tituloBuscar"> Buscá tu centro mas cercano! </h3>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <img src="../iconos/gato.svg" class="d-inline-block align-top navbar__icono" alt="" loading="lazy"> 
+     <a class="navbar-brand navbar-brand-style">Rescate felino</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="colaborar.html">Colaborar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adopcion.html">Adoptar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+       </ul>
+     </div>
+   </nav>
 
-                <!--Mapa google maps-->
-                <iframe class="mapa" style="border-radius: 2%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2008981131667!2d-58.559322285765745!3d-34.54846846208182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9ff824337a7%3A0x7dc83e50e82ab26e!2sIndependencia%205077%2C%20Villa%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1607364554799!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </section>
+   <div id="myCarousel__Colaborar" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+        <img src="../images/colaborar.jpg" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+         <h1>Vos también podés ser parte de su vida.</h1>
         </div>
 
-    </div>  
+    </div>
+    </div>
+</div>
+
+   <div class="row colaborar">
+    <div class="col-lg-4">
+      <img src="../images/voluntario.png" class="bd-placeholder-img rounded" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></img>
+      <h2 class="featurette-heading">Voluntarios</h2>
+      <p class="lead">Contamos con un staff de voluntarios que nos acompañan en nuestro camino. Vos también podés hacerlo. </p>
+      <p><a class="btn btn-info" href="#" role="button">¡Convertite en voluntario! »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <img src="../images/donacion.png" class="bd-placeholder-img rounded" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></img>
+        <h2 class="featurette-heading">Donaciones</h2>
+        <p class="lead">Somos una organización sin fines de lucro. Cada gatito que rescatamos es llevado a realizarse todos los estudios y tratamientos necesarios para su cuidado y/o recuperación. 
+        Algunos de estos tratamientos son muy costosos y es por eso que dejamos abierta la puerta de la donación para quienes quieran, por este medio, ayudar a que todos los gatitos puedan seguir recibiendo los cuidados necesarios. </p>
+        <p><a class="btn btn-info" href="#" role="button">¡Ayudanos! »</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="../images/hogar.png" class="bd-placeholder-img rounded" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></img>
+        <h2 class="featurette-heading">Tránsito</h2>
+        <p class="lead">Somos un refugio muy grande y tratamos de recibir a todos los gatitos rescatados. 
+            En ocaciones necesitamos espacio para gatitos que requieran un cuidado mucho mas especial que otros. 
+            Por eso te invitamos a que seas parte de este proyecto, y nos ayudes brindando un espacio de tránsito para aquellos gatitos que ya estan esperando la adopción. </p>
+        <p><a class="btn btn-info" href="#" role="button">¡Apadriná! »</a></p>
+      </div>
+  </div>
+     
 
 
     <footer class="footer">

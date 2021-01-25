@@ -3,6 +3,7 @@
     padding: 0px;
 }
 
+
 @import "variables";
 @import "index";
 @import "colaborar";
@@ -10,123 +11,6 @@
 @import "nosotros";
 @import "contacto";
 
-@media (max-width: 425px) {
 
 
-    .titulo-seccion {
-        font-size: 30px;
-    }
 
-    .formulario__formContacto {
-        margin: 20px 10px 20px 20px;
-    }
-
-    footer div {
-        padding: 5px;
-        text-align: center;
-    }
-
-    footer h1 {
-        font-size: 20px;
-    }
-
-    footer ul li {
-        font-size: 15px;
-    }
-
-    footer div .row {
-        justify-content: center;
-    }
-
-    footer div ul li a img {
-        height: 20px;
-        width: 20px;
-    }
-
-    #tituloBuscar {
-        font-size: 30px;
-    }
-
-    .mapa {
-        height: 200px;
-        width: 500px;
-    }
-
-    div h3 {
-        font-size: 25px;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .seccionPasos {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .seccionPasos h1 {
-        font-size: 25px;
-    }
-
-    .seccionPasos p {
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width: 1023px) and (min-width: 426px) {
-    
-    .formulario__formContacto {
-        margin: 50px 10px 50px 20px;
-    }
-
-    footer div {
-        margin-top: 20px;
-    }
-
-    footer h1 {
-        font-size: 20px;
-    }
-
-    footer ul li {
-        font-size: 15px;
-    }
-
-    footer div .row {
-        justify-content: left;
-    }
-
-    footer div ul li a img {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-@media (max-width: 1440px) and (min-width: 1024px) {
-    
-    .formulario__formContacto {
-        margin: 100px 250px 100px 250px;
-    }
-
-    footer div {
-        margin-top: 20px;
-    }
-
-    footer h1 {
-        font-size: 30px;
-    }
-
-    footer ul li {
-        font-size: 20px;
-    }
-
-    footer div .row {
-        justify-content: left;
-    }
-
-    footer div ul li a img {
-        height: 30px;
-        width: 30px;
-    }
-}

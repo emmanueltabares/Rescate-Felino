@@ -1,103 +1,65 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px; }
 
 /* NavBar */
+.navbar__icono {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
 .navbar-brand-style {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 35px; }
 
-.navbar-color {
-  background-color: #42C2A0; }
-  .navbar-color a {
-    color: white; }
+.navbar-color a {
+  color: black; }
 
 /* Carousel */
-.img-slide {
+#myCarousel {
+  margin-top: 60px;
   width: 100%;
-  height: 620px; }
+  height: 600px; }
+  #myCarousel .img-slide {
+    width: 100%;
+    height: 600px; }
 
-/* Div pasos */
-.seccionPasos--colorpaso1 {
-  background-color: #ec8f6e; }
-
-.seccionPasos--colorpaso2 {
-  background-color: #db714a; }
-
-.seccionPasos--colorpaso3 {
-  background-color: #e65e2d; }
-
-.seccionPasos--colorpaso4 {
-  background-color: #993c1a; }
-
-.seccionPasos {
-  margin-top: 100px;
-  margin-bottom: 50px; }
-
-.seccion {
-  padding: auto;
-  text-align: center;
-  transition: all 1s; }
-  .seccion:hover {
-    opacity: 80%; }
-  .seccion .seccion__titulo {
-    color: white; }
+/* marketing  */
+.marketing {
+  margin-top: 40px; }
 
 /* Footer */
 .footer {
-  background-color: #46947f; }
+  background-color: #B3CEFF; }
   .footer .container nav div ul li {
     list-style-type: none; }
     .footer .container nav div ul li a {
       text-decoration: none;
-      color: white; }
+      color: black; }
 
 .copy {
   text-align: center;
-  color: white; }
-
-#tituloBuscar {
-  font-size: 50px;
-  color: black;
-  text-align: center;
-  margin-top: 40px;
-  font-family: "Inter", sans-serif; }
-
-.mapa {
-  margin-top: 40px; }
-
-.seccion .seccion__article .seccion__article__titulo {
-  margin-top: 200px;
-  text-align: center; }
-
-.seccion .seccion__table {
-  margin-left: 38%;
-  margin-bottom: 40px; }
-
-.seccion {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  padding: 30px;
-  text-align: center; }
-
-.seccionPasos h1 {
-  font-size: 40px;
-  font-family: "Inter", sans-serif; }
-
-.seccionPasos p {
-  font-size: 20px; }
-
-.formulario__formContacto {
-  margin: 50px 0px 50px 50%;
-  border: gray solid 1px;
-  border-radius: 6px;
-  padding: 20px; }
+  color: black; }
 
 @media (max-width: 425px) {
-  .titulo-seccion {
-    font-size: 30px; }
-  .formulario__formContacto {
-    margin: 20px 10px 20px 20px; }
+  .navbar-brand-style {
+    font-size: 25px; }
+  #myCarousel {
+    height: 280px; }
+    #myCarousel .carousel-inner .img-slide {
+      height: 280px; }
+    #myCarousel .carousel-inner .container {
+      padding-top: 50px; }
+      #myCarousel .carousel-inner .container div h1 {
+        font-size: 20px; }
+      #myCarousel .carousel-inner .container div p {
+        font-size: 12px; }
+        #myCarousel .carousel-inner .container div p a {
+          font-size: 12px; }
+    #myCarousel .carousel-indicators {
+      display: none; }
   footer div {
     padding: 5px;
     text-align: center; }
@@ -109,29 +71,23 @@
     justify-content: center; }
   footer div ul li a img {
     height: 20px;
-    width: 20px; }
-  #tituloBuscar {
-    font-size: 30px; }
-  .mapa {
-    height: 200px;
-    width: 500px; }
-  div h3 {
-    font-size: 25px;
-    margin-top: 40px;
-    text-align: center; }
-  .seccionPasos {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 30px;
-    text-align: center; }
-  .seccionPasos h1 {
-    font-size: 25px; }
-  .seccionPasos p {
-    font-size: 15px; } }
+    width: 20px; } }
 
-@media (max-width: 1023px) and (min-width: 426px) {
-  .formulario__formContacto {
-    margin: 50px 10px 50px 20px; }
+@media (max-width: 1024px) {
+  #myCarousel {
+    height: 400px; }
+    #myCarousel .img-slide {
+      height: 400px; }
+    #myCarousel .carousel-indicators {
+      display: none; }
+    #myCarousel .container {
+      padding-top: 50px; }
+      #myCarousel .container div h1 {
+        font-size: 40px; }
+      #myCarousel .container div p {
+        font-size: 15px; }
+        #myCarousel .container div p a {
+          font-size: 15px; }
   footer div {
     margin-top: 20px; }
   footer h1 {
@@ -144,9 +100,7 @@
     height: 30px;
     width: 30px; } }
 
-@media (max-width: 1440px) and (min-width: 1024px) {
-  .formulario__formContacto {
-    margin: 100px 250px 100px 250px; }
+@media (max-width: 1440px) {
   footer div {
     margin-top: 20px; }
   footer h1 {
@@ -158,3 +112,129 @@
   footer div ul li a img {
     height: 30px;
     width: 30px; } }
+
+.colaborar {
+  margin: 30px 60px 100px 60px; }
+  .colaborar img {
+    margin-left: 32%; }
+  .colaborar h2 {
+    text-align: center; }
+  .colaborar p {
+    text-align: center; }
+
+.carousel-caption h1 {
+  font-size: 50px; }
+
+@media (max-width: 425px) {
+  #myCarousel__Colaborar {
+    margin-top: 60px; }
+    #myCarousel__Colaborar .carousel-caption h1 {
+      font-size: 10px; }
+  .colaborar {
+    margin-left: 10px;
+    margin-right: 10px; }
+    .colaborar img {
+      margin-left: 37%;
+      height: 100px;
+      width: 100px; }
+    .colaborar .featurette-heading {
+      font-size: 20px; }
+    .colaborar .lead {
+      font-size: 15px; }
+    .colaborar .btn {
+      font-size: 11px; } }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .colaborar img {
+    margin-left: 39%; } }
+
+.card {
+  margin: 100px 150px 100px 150px; }
+
+.nav-item-adopcion {
+  text-align: center; }
+  .nav-item-adopcion h2 {
+    font-size: 40px; }
+  .nav-item-adopcion p {
+    font-size: 20px; }
+
+.nosotros {
+  background-image: url(../Backgrounds/Diseño.png);
+  background-color: #6f94aa;
+  background-repeat: no-repeat;
+  background-size: 100% 1565px; }
+  .nosotros .colaborar h2 {
+    margin-top: 40px;
+    color: white;
+    text-decoration: overline;
+    font-size: 40px; }
+  .nosotros .colaborar p {
+    color: white; }
+  .nosotros .nav {
+    background-color: #ddeff7;
+    height: 100px;
+    align-items: center; }
+    .nosotros .nav li a {
+      margin-left: 10px; }
+
+.marketing {
+  margin-top: 100px; }
+  .marketing .featurette h2 {
+    font-size: 60px; }
+  .marketing .featurette p {
+    font-size: 22px; }
+  .marketing .featurette .featurette-heading {
+    margin-top: 25px; }
+
+.color {
+  color: black; }
+
+@media (max-width: 425px) {
+  .nosotros {
+    background-size: 400% 2430px;
+    text-align: center; }
+    .nosotros .marketing .featurette h2 {
+      font-size: 40px; }
+    .nosotros .marketing .featurette p {
+      font-size: 18px; }
+    .nosotros .colaborar h2 {
+      margin-top: 25px;
+      font-size: 35px; }
+    .nosotros .colaborar .lead {
+      font-size: 20px; }
+    .nosotros .nav {
+      height: 150px; }
+      .nosotros .nav h2 {
+        margin-top: 5px;
+        font-size: 30px; } }
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .nosotros {
+    background-size: 200% 1800px; } }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .nosotros {
+    background-size: 110% 1360px; }
+    .nosotros .marketing {
+      margin-top: 100px; }
+      .nosotros .marketing .featurette h2 {
+        font-size: 40px; }
+      .nosotros .marketing .featurette p {
+        font-size: 22px; }
+    .nosotros .colaborar .featurette-heading {
+      margin-top: 50px;
+      font-size: 35px; }
+    .nosotros .colaborar .lead {
+      font-size: 20px; }
+    .nosotros .nav {
+      height: 120px; }
+      .nosotros .nav h2 {
+        margin-top: 5px;
+        font-size: 22px; } }
+
+.formulario__formContacto {
+  margin: 100px 10px 100px 10px; }
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .formulario__formContacto {
+    margin: 100px 40px 100px 40px; } }
