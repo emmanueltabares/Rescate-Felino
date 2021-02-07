@@ -1,0 +1,13 @@
+.formulario__formContacto {
+    margin: 100px 10px 100px 10px;
+
+    .btn-primary {
+        background-color: #2e2e41;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .formulario__formContacto {
+        margin: 100px 40px 100px 40px;
+    }
+}

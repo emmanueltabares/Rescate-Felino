@@ -1,155 +1,132 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@200&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
   margin: 0px;
   padding: 0px; }
 
 /* NavBar */
-.navbar__icono {
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-  margin-bottom: 10px; }
+nav {
+  color: #fee8a0; }
+  nav a img {
+    margin-top: 10px; }
+  nav h1 {
+    font-family: 'Fredoka One', cursive; }
+  nav p {
+    font-family: 'Nunito', sans-serif; }
 
-.navbar-brand-style {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 35px; }
-
-.navbar-color a {
-  color: black; }
+.navbar {
+  background-color: #424258 !important; }
+  .navbar .nav-item a {
+    font-family: 'Nunito', sans-serif;
+    color: #fee8a0 !important; }
+    .navbar .nav-item a:hover {
+      text-decoration: underline; }
 
 /* Carousel */
 #myCarousel {
-  margin-top: 60px;
   width: 100%;
   height: 600px; }
   #myCarousel .img-slide {
     width: 100%;
-    height: 600px; }
+    height: 620px; }
+  #myCarousel .carousel-caption h1 {
+    padding-bottom: 10px;
+    font-family: 'Fredoka One', cursive;
+    color: #1e1e2e; }
+  #myCarousel .carousel-caption p {
+    display: none; }
 
-/* marketing  */
-.marketing {
-  margin-top: 40px; }
+#sectionPrincipal {
+  margin-bottom: 200px; }
+  #sectionPrincipal #sectionPrincipal_Index h2 {
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive; }
+  #sectionPrincipal #sectionPrincipal_Index p {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif; }
+  #sectionPrincipal #sectionPrincipal_Index a {
+    text-align: center; }
 
 /* Footer */
-.footer {
-  background-color: #B3CEFF; }
-  .footer .container nav div ul li {
-    list-style-type: none; }
-    .footer .container nav div ul li a {
-      text-decoration: none;
-      color: black; }
+section {
+  padding: 60px 0; }
 
-.copy {
-  text-align: center;
-  color: black; }
+#footer {
+  background: #2e2e41; }
+  #footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #ffffff;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff; }
+  #footer a {
+    color: #ffffff;
+    text-decoration: none; }
+  #footer ul.list-items li:hover {
+    font-weight: 700; }
+  #footer ul.list-items li a {
+    color: #ffffff; }
+  #footer ul.social li a:hover {
+    color: #eeeeee; }
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px; } }
 
 @media (max-width: 425px) {
-  .navbar-brand-style {
-    font-size: 25px; }
+  .navBarLogo {
+    height: 150px; }
+    .navBarLogo nav a img {
+      width: 100px;
+      height: 60px; }
+    .navBarLogo nav h1 {
+      font-size: 30px; }
+    .navBarLogo nav p {
+      font-size: 10px; }
   #myCarousel {
-    height: 280px; }
-    #myCarousel .carousel-inner .img-slide {
-      height: 280px; }
-    #myCarousel .carousel-inner .container {
+    height: 200px; }
+    #myCarousel .carousel-item img {
+      height: 200px; }
+    #myCarousel .carousel-item .container {
       padding-top: 50px; }
-      #myCarousel .carousel-inner .container div h1 {
-        font-size: 20px; }
-      #myCarousel .carousel-inner .container div p {
-        font-size: 12px; }
-        #myCarousel .carousel-inner .container div p a {
-          font-size: 12px; }
-    #myCarousel .carousel-indicators {
-      display: none; }
-  footer div {
-    padding: 5px;
-    text-align: center; }
-  footer h1 {
-    font-size: 20px; }
-  footer ul li {
-    font-size: 15px; }
-  footer div .row {
-    justify-content: center; }
-  footer div ul li a img {
-    height: 20px;
-    width: 20px; } }
-
-@media (max-width: 1024px) {
-  #myCarousel {
-    height: 400px; }
-    #myCarousel .img-slide {
-      height: 400px; }
-    #myCarousel .carousel-indicators {
-      display: none; }
-    #myCarousel .container {
-      padding-top: 50px; }
-      #myCarousel .container div h1 {
-        font-size: 40px; }
-      #myCarousel .container div p {
-        font-size: 15px; }
-        #myCarousel .container div p a {
-          font-size: 15px; }
-  footer div {
-    margin-top: 20px; }
-  footer h1 {
-    font-size: 20px; }
-  footer ul li {
-    font-size: 15px; }
-  footer div .row {
-    justify-content: left; }
-  footer div ul li a img {
-    height: 30px;
-    width: 30px; } }
-
-@media (max-width: 1440px) {
-  footer div {
-    margin-top: 20px; }
-  footer h1 {
-    font-size: 30px; }
-  footer ul li {
-    font-size: 20px; }
-  footer div .row {
-    justify-content: left; }
-  footer div ul li a img {
-    height: 30px;
-    width: 30px; } }
-
-.colaborar {
-  margin: 30px 60px 100px 60px; }
-  .colaborar img {
-    margin-left: 32%; }
-  .colaborar h2 {
-    text-align: center; }
-  .colaborar p {
-    text-align: center; }
+      #myCarousel .carousel-item .container div h1 {
+        font-size: 25px; }
+  #sectionPrincipal {
+    margin-bottom: 200px; }
+    #sectionPrincipal h2 {
+      font-size: 40px; } }
 
 .carousel-caption h1 {
-  font-size: 50px; }
+  font-size: 60px; }
 
-@media (max-width: 425px) {
-  #myCarousel__Colaborar {
-    margin-top: 60px; }
-    #myCarousel__Colaborar .carousel-caption h1 {
-      font-size: 10px; }
+.carousel-caption p {
+  font-size: 20px; }
+
+@media (max-width: 320px) {
+  #myCarousel__Colaborar .carousel-caption h1 {
+    font-size: 10px; }
   .colaborar {
     margin-left: 10px;
     margin-right: 10px; }
     .colaborar img {
-      margin-left: 37%;
-      height: 100px;
-      width: 100px; }
+      height: 250px;
+      width: 250px; }
     .colaborar .featurette-heading {
       font-size: 20px; }
     .colaborar .lead {
-      font-size: 15px; }
-    .colaborar .btn {
-      font-size: 11px; } }
+      font-size: 15px; } }
 
-@media (max-width: 1023px) and (min-width: 768px) {
-  .colaborar img {
-    margin-left: 39%; } }
-
-.card {
-  margin: 100px 150px 100px 150px; }
+@media (max-width: 768px) {
+  .colaborar {
+    margin-left: 10px;
+    margin-right: 10px; }
+    .colaborar img {
+      height: 250px;
+      width: 250px; } }
 
 .nav-item-adopcion {
   text-align: center; }
@@ -158,29 +135,28 @@
   .nav-item-adopcion p {
     font-size: 20px; }
 
-.nosotros {
-  background-image: url(../Backgrounds/Diseño.png);
-  background-color: #6f94aa;
-  background-repeat: no-repeat;
-  background-size: 100% 1565px; }
-  .nosotros .colaborar h2 {
+.info {
+  padding-left: 0%;
+  padding-right: 0%; }
+  .info img {
+    margin-left: 40px; }
+  .info h2 {
     margin-top: 40px;
-    color: white;
+    text-align: center;
+    color: #2e2e41;
     text-decoration: overline;
-    font-size: 40px; }
-  .nosotros .colaborar p {
-    color: white; }
-  .nosotros .nav {
-    background-color: #ddeff7;
-    height: 100px;
-    align-items: center; }
-    .nosotros .nav li a {
-      margin-left: 10px; }
+    font-size: 40px;
+    font-weight: bold; }
+  .info p {
+    text-align: center;
+    font-size: 20px;
+    color: #2e2e41; }
 
 .marketing {
   margin-top: 100px; }
   .marketing .featurette h2 {
-    font-size: 60px; }
+    font-size: 60px;
+    color: #2e2e41; }
   .marketing .featurette p {
     font-size: 22px; }
   .marketing .featurette .featurette-heading {
@@ -189,51 +165,19 @@
 .color {
   color: black; }
 
-@media (max-width: 425px) {
-  .nosotros {
-    background-size: 400% 2430px;
-    text-align: center; }
-    .nosotros .marketing .featurette h2 {
-      font-size: 40px; }
-    .nosotros .marketing .featurette p {
-      font-size: 18px; }
-    .nosotros .colaborar h2 {
-      margin-top: 25px;
-      font-size: 35px; }
-    .nosotros .colaborar .lead {
-      font-size: 20px; }
-    .nosotros .nav {
-      height: 150px; }
-      .nosotros .nav h2 {
-        margin-top: 5px;
-        font-size: 30px; } }
-
-@media (max-width: 768px) and (min-width: 426px) {
-  .nosotros {
-    background-size: 200% 1800px; } }
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .nosotros {
-    background-size: 110% 1360px; }
-    .nosotros .marketing {
-      margin-top: 100px; }
-      .nosotros .marketing .featurette h2 {
-        font-size: 40px; }
-      .nosotros .marketing .featurette p {
-        font-size: 22px; }
-    .nosotros .colaborar .featurette-heading {
-      margin-top: 50px;
-      font-size: 35px; }
-    .nosotros .colaborar .lead {
-      font-size: 20px; }
-    .nosotros .nav {
-      height: 120px; }
-      .nosotros .nav h2 {
-        margin-top: 5px;
-        font-size: 22px; } }
+ul.nav {
+  margin-top: 100px;
+  height: 100px; }
+  ul.nav .nav-item {
+    margin-left: 10px; }
+    ul.nav .nav-item .nav-link:hover {
+      background-color: #1c1c29;
+      text-decoration: none; }
 
 .formulario__formContacto {
   margin: 100px 10px 100px 10px; }
+  .formulario__formContacto .btn-primary {
+    background-color: #2e2e41; }
 
 @media (max-width: 1440px) and (min-width: 1024px) {
   .formulario__formContacto {
