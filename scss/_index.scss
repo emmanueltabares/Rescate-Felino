@@ -45,19 +45,22 @@ nav {
     .carousel-caption {
         h1 {
             padding-bottom: 10px;
+            -webkit-text-stroke: 1px white;
             font-family: 'Fredoka One', cursive;
             color: #1e1e2e;
             
         }
-        p { 
-            display: none;
+        p {
+            font-family: 'Nunito', sans-serif;
+            color: #1e1e2e;
         }
     }
     
 }
 
 #sectionPrincipal {
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 500px;
     #sectionPrincipal_Index {
         h2 {
             font-size: 40px;
@@ -69,6 +72,18 @@ nav {
         }
         a {
             text-align: center
+        }
+    }
+    .requisitos li {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    li {
+        a {
+            margin-left: 42%;
         }
     }
 }
@@ -114,6 +129,7 @@ section {
 
 @media (max-width:767px){
     
+
     #footer h5 {
     padding-left: 0;
     border-left: transparent;
@@ -123,7 +139,6 @@ section {
 }
 
 @media (max-width: 425px) {
-
     .navBarLogo {
         height: 150px;
         nav {
@@ -143,7 +158,7 @@ section {
     }
 
     #myCarousel {
-        height: 200px;
+        height: 150px;
         .carousel-item {
             img {
                 height: 200px;
@@ -155,15 +170,78 @@ section {
                     h1 {
                         font-size: 25px;
                     }
+                    p {
+                        display: none;
+                    }
                 }
             }
         }    
     }
 
     #sectionPrincipal {
-        margin-bottom: 200px;
-        h2 {
-            font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 600px;
+        #sectionPrincipal_Index {
+            h2 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .requisitos {
+            li {
+                list-style-type: none;
+            }
+        }
+        li {
+            a {
+                margin-left: 0%;
+            }
         }
     }
-} 
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    #myCarousel {
+        height: 500px;
+        .carousel-item {
+            img {
+                height: 500px;
+            }
+           .container {
+                padding-top: 50px;
+        
+                div {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }    
+    }
+   
+    #sectionPrincipal {
+        margin-top: 350px;
+        margin-bottom: 500px;
+        #sectionPrincipal_Index {
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .requisitos {
+            li {
+               margin-left: 120px;
+            }
+        }
+    }
+}
